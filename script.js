@@ -47,5 +47,17 @@ const imageSets = [
         'https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
       ]
     }
+    {
+      id:5,
+      name: 'Ephraem Kruger',
+      title: 'Emotion',
+      images: [
+        'assets/DSC_0007.JPG',
+        'assets/DSC_0010.JPG',
+        'assets/DSC_0025.JPG',
+        'assets/DSC_0026.JPG',
+        'assets/DSC_0038.JPG'
+      ]
+    }
 
   ];
