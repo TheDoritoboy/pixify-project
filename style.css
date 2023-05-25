@@ -1,4 +1,23 @@
-html{
-   background-color:#2A3B49;
-   ;
+html {
+    background-color:#2A3B49;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    color: #7BFFE9;
+    font-size: 36px;
+}
+
+header {
+    width: auto;
+    height: 50px;
+    background-color: #2A3B49;
+}
+
+.subbmission-box {
+    background-color: #2A3B49;
+    width: 481px;
+    height: 608px;
+    border: none;
+    border-radius: 8px;
 }
