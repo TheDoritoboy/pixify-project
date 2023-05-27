@@ -62,4 +62,4 @@ const imageSets = [
 
   ];
 
-  
+   let count = 0;

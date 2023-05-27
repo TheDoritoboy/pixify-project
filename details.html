@@ -7,11 +7,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1 class="logo">PIXIFY</h1>
-            <a href="">2023 Submissions</a>
-            <a href="">About</a>
-            <p id="mode">Dark Mode</p></header>
-        
+        <header class="head-container">
+            <a href="index.html" class="logo">PIXIFY</a>
+                <div class="mini-container">
+                    <a href="submissions.html">2023 Submissions</a>
+                    <a href="about.html">About</a>
+                    <p id="mode">Dark Mode</p>
+                </div>
+        </header>
+        <main>
+            <div class="flex-container2">
+                <h1 class="flex-item2" id="title"></h1>
+                <h1 class="flex-item2" id="author"></h1>
+                <img class="flex-item2" id="slideshow" src="" alt="slideshow">
+                <p class="flex-item2" id="quantity"></p>
+                    <div class="flex-butt">
+                        <button id="prev">Previous</button>
+                        <button id="next">Next</button>
+                    </div>
+            </div>
+            <script src="script.js"></script>
+        </main>
     </body>
 </html>

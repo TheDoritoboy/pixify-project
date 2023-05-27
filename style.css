@@ -3,15 +3,24 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin: 14px 23px 14px 23px;
+}
+
+#mode {
+    font-size: 16px;
+    text-decoration: none;
+    color: #7BFFE9;
+    margin-left: 23px;
+}
+
 .logo {
     color: #7BFFE9;
     font-size: 36px;
-}
-
-header {
-    width: auto;
-    height: 50px;
-    background-color: #2A3B49;
+    margin: 0;
 }
 
 .subbmission-box {
@@ -20,10 +29,6 @@ header {
     height: 608px;
     border: none;
     border-radius: 8px;
-}
-
-.grid-container {
-display: grid;
 }
 
 .summary {
@@ -39,6 +44,8 @@ body {
     background-color: white;
     color: black;
     font-size: 25px;
+    margin: 0;
+    padding: 0;
   }
   
   .dark-mode {
@@ -49,4 +56,46 @@ body {
   img {
     height: 193px;
     width: 345px;
+  }
+
+  #slideshow{
+    height: 582px;
+    width: 1120px;
+  }
+
+  .flex-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .flex-butt{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+  }
+
+  #prev, #next{
+    height: 35px;
+    width: 103px;
+    margin: 10px;
+    background-color: #2A3B49;
+    border-radius: 60px;
+    border: none;
+    color: #7BFFE9;
+  }
+
+  .head-container {
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    width: auto;   
+    background-color: #2A3B49;
+    margin: 0;
+  }
+
+  .mini-container {
+    display: flex;
+    justify-content: center;
   }
