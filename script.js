@@ -108,3 +108,7 @@ var imageSets = [
     slideshow.src = mageSets.images [0];
    }
   
+  function info(){
+    const title = document.getElementById("title");
+    title = imageSets.title;
+  }

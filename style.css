@@ -37,6 +37,7 @@ p {
     color: #7BFFE9;
     margin-left: 23px;
     margin-right: 19px;
+   
 }
 
 .logo {
@@ -62,10 +63,6 @@ body {
     padding: 0;
   }
   
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
 
   .me {
     height: 193px;
@@ -83,13 +80,14 @@ body {
   #slideshow{
     height: 582px;
     width: 1120px;
+   margin: auto;
   }
 
   .flex-container2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-content: center;
   }
 
   .flex-butt{
@@ -104,8 +102,17 @@ justify-content: center;
     margin: 10px;
     background-color: #2A3B49;
     border-radius: 60px;
-    border: none;
+    border: #7BFFE9 solid 2px;
     color: #7BFFE9;
+  }
+
+  #title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  #author {
+    font-size: 36px;
   }
 
   .head-container {

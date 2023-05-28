@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="">
         <script src="script.js"></script>
         <script>window.onload = init</script>
         <header class="head-container">
@@ -14,13 +14,19 @@
                 <div class="mini-container">
                     <a href="submissions.html">2023 Submissions</a>
                     <a href="about.html">About</a>
-                    <button id="mode">Dark Mode</button>
+                    <button onclick="toggleDark()" id="mode">Dark Mode</button>
+                    <script>   
+                    function toggleDark() {
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                      }
+                      </Script>
                 </div>
         </header>
         <main>
             <div class="flex-container2">
-                <h1 class="flex-item2" id="title"></h1>
-                <h1 class="flex-item2" id="author"></h1>
+                <p class="flex-item2" id="title"></p>
+                <p class="flex-item2" id="author"></p>
                 <img class="flex-item2" id="slideshow" src="" alt="slideshow">
                 <p class="flex-item2" id="quantity"></p>
                     <div class="flex-butt">
