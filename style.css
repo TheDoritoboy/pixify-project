@@ -55,11 +55,17 @@ body {
     color: white;
   }
 
+  .me {
+    height: 193px;
+    width: 180px;
+  }
+
   img {
     height: 193px;
     width: 345px;
     margin: 0;
     padding: 0;
+    border-radius: 8px;
   }
 
   #slideshow{
