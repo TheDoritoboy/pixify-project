@@ -62,4 +62,30 @@ const imageSets = [
 
   ];
 
-   let count = 0;
+
+  var images = ['http://placehold.it/300x150?text=Image1', 'http://placehold.it/300x150?text=Image2', 'http://placehold.it/300x150?text=Image3'];
+
+  var index = 0;
+  
+  var the_image = document.getElementById("main-image");
+  the_image.src = images[0];
+  
+  function show_image(direction)
+  {
+    if (direction == "left")
+    {
+      index--;
+    }
+    else
+    {
+      index++;
+      index %= images.length;
+    }
+    
+    if (index < 0)
+    {
+      index = images.length - 1;
+    }
+    
+    the_image.src = images[index];
+  }
