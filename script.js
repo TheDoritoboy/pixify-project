@@ -1,4 +1,5 @@
-const imageSets = [
+
+var imageSets = [
     {
       id:1,  
       name: 'Andrew Smith',
@@ -61,5 +62,49 @@ const imageSets = [
     }
 
   ];
-
+  init();
+  console.log(this.imageSets[1].id);
    let count = 0;
+   function nextImage () {
+   var slideshow = document.getElementById("slideshow");
+   var imageName = slideshow.getAttribute("src"); 
+   var id = getImageSetId(imageName);
+   var mageSets = imageSets[id - 1];
+   var current = imageSets[id - 1].images.indexOf(imageName);
+   var next = 0;
+   if (current != mageSets.images.length - 1) {
+    next = current +1;
+   }
+   slideshow.src = mageSets.images [next];
+   }
+
+   function preImage () {
+    var slideshow = document.getElementById("slideshow"); 
+    var imageName = slideshow.getAttribute("src");
+    var id = getImageSetId(imageName);
+    var mageSets = imageSets[id - 1];
+    var current = imageSets[id - 1].images.indexOf(imageName);
+    var next = imageSets[id - 1].images.length - 1;
+    if (current != 0 ) {
+     next = current - 1;
+    }
+    slideshow.src = mageSets.images [next];
+    }
+    function getImageSetId(name){
+      var id = 0;
+      var slideshow = document.getElementById("slideshow"); 
+      imageSets.forEach(set =>{
+      set.images.forEach(img => {
+        if (img === name) id = set.id;
+      })
+      })
+      return id;
+    }
+   function init (){
+    const urlParams = new URLSearchParams(window.location.search);
+    var id = urlParams.get('id');;
+    var slideshow = document.getElementById("slideshow"); 
+    var mageSets = imageSets[id - 1];
+    slideshow.src = mageSets.images [0];
+   }
+  

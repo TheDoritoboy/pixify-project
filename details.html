@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="script.js"></script>
+        <script>window.onload = init</script>
         <header class="head-container">
             <a href="index.html" class="logo">PIXIFY</a>
                 <div class="mini-container">
@@ -22,11 +24,10 @@
                 <img class="flex-item2" id="slideshow" src="" alt="slideshow">
                 <p class="flex-item2" id="quantity"></p>
                     <div class="flex-butt">
-                        <button id="prev">Previous</button>
-                        <button id="next">Next</button>
+                        <button onclick="preImage()" id="prev">Previous</button>
+                        <button onclick="nextImage()" id="next">Next</button>
                     </div>
             </div>
-            <script src="script.js"></script>
         </main>
     </body>
 </html>
