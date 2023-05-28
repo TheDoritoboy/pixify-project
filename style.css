@@ -10,25 +10,27 @@ a {
     margin: 14px 23px 14px 23px;
 }
 
+p {
+    font-size: 16px;
+}
+
+.see {
+    color: black;
+    font-size: 10px;
+}
+
 #mode {
     font-size: 16px;
     text-decoration: none;
     color: #7BFFE9;
     margin-left: 23px;
+    margin-right: 19px;
 }
 
 .logo {
     color: #7BFFE9;
     font-size: 36px;
-    margin: 0;
-}
-
-.subbmission-box {
-    background-color: #2A3B49;
-    width: 481px;
-    height: 608px;
-    border: none;
-    border-radius: 8px;
+    margin: 0 0 0 19px;
 }
 
 .summary {
@@ -56,6 +58,8 @@ body {
   img {
     height: 193px;
     width: 345px;
+    margin: 0;
+    padding: 0;
   }
 
   #slideshow{
@@ -99,3 +103,85 @@ justify-content: center;
     display: flex;
     justify-content: center;
   }
+
+.deets {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "title title sub"
+    "img1 img2 sub"
+    "img3 img4 sub"
+    "img5 img6 sub";
+    margin-top: 62px;
+    margin-left: 25px;
+  }
+
+  .subtitle {
+    grid-area: title;
+}
+
+.img1 {
+    grid-area: img1;
+}
+ 
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+  .submission-box {
+    grid-area: sub;
+    display: flex;
+    flex-direction: column;
+    background-color: #2A3B49;
+    width: 481px;
+    height: 608px;
+    border: none;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.submit {
+    height: 61px;
+    width: 190.47px;
+    border: 2px solid #7BFFE9;
+    border-radius: 60px;
+    color: #7BFFE9;
+    background-color: #2A3B49;
+}
+
+.work {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+
+input {
+    width: 360px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    border: none;
+}
